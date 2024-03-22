@@ -1,0 +1,261 @@
+/* Global rules */
+.nav-container {
+    background-color:  rgba(252,250,229, 0.0);
+}
+.topnav {
+    margin: auto;
+    width: 100%;
+    background-color:  rgba(252,250,229, 0.0);
+    overflow: auto;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color:#964032;
+    text-align: center;
+    padding: 12px;
+    width: 5.4em;
+    text-decoration-line: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    border-right: 1px solid rgba(150,64,50, 0.15);
+    
+}
+
+.topnav a:active  {
+    text-decoration-line: underline;
+    text-decoration-color: #964032;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.navbar {
+    float: right;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: #964032;
+    padding: 12px 12px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    width: 10em;
+  }
+  
+  .dropdown:hover .dropdown-content{
+    display: block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(252,250,229, 0.7);
+    min-width: 160px;
+    box-shadow: rgba(128, 69, 54, 0.1) 0px 10px 30px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: #964032;
+    font-size: 14px;
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-right: none;
+    width: 85%;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  .langSwitch {
+    display: block;
+    text-align: right;
+   overflow: auto;
+  }
+
+  .langSwitch a {
+    float: right;
+    display: block;
+    text-align: right;
+    font-size: 12px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-right: 1px solid rgba(150,64,50, 0.15);
+   }
+
+   .langSwitch a:not(:last-child) {
+    border: none;
+   }
+
+   /* .langContainer {
+    float: right;
+    width: 100%;
+    display: block;
+   }
+/* Responsive rules - apply when screen width is less than 1200px */
+
+/* DESKTOP */
+@media all and (min-width:1200px) {
+    .topnav {
+        width: 80%;
+    }
+}
+
+/* TABLET */
+@media all and (min-width:501px) and (max-width:1199px) {
+    .topnav {
+        width: 90%;
+    }
+
+    
+    .navbar {
+        float: none;
+    }
+        
+    .topnav {
+        overflow: hidden;
+        text-align: center;
+        z-index: 6;
+    }
+        
+    .topnav a {
+        float: none;
+        display: inline-block;
+        color: #964032;
+        text-align: center;
+        margin-right: -4px;  /* inline-block gap fix */
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        -webkit-transition: background 0.3s linear;
+        -moz-transition: background 0.3s linear;
+        -ms-transition: background 0.3s linear;
+        -o-transition: background 0.3s linear;
+        transition: background 0.3s linear;
+        z-index: 9;
+    }
+        
+    .dropdown {
+        float: none;
+        display: inline;
+    }
+        
+    .dropdown-content {
+        display: none;
+        position: relative;
+        background-color: inherit;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 9;
+    }
+        
+    .dropdown-content a {
+        float: none;
+        color: #964032;
+        font-size: 14px;
+        padding: 12px 12px;
+        width: 100%;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+    }
+
+    .show {
+        display: block;
+      }
+}
+
+/* PHONE */
+/* When the screen is less than 500 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media all and (max-width:500px) {
+    .topnav {
+        width: 101%;
+    }
+    
+    .navbar {
+        float: left;
+    }
+    
+    .topnav a {
+        border-right: none;
+  
+    }
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+        display: none;
+
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+        
+    }
+
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media all and (max-width: 500px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+      
+    }
+
+  /* Center language picker */
+   .langSwitch {
+    float: none;
+    text-align: center;
+    overflow: hidden;
+    margin-top: -30px;
+    margin-left:auto;
+    margin-right: auto;
+    z-index: 6px;
+    font-size: 10px;
+   }
+
+   .langSwitch a {
+    float: none;
+    display: inline-block;
+    border-right: none;
+    border-left: 1px solid rgba(150,64,50, 0.15);
+   }
+
+   .langContainer {
+    float: none;
+    }
+}
