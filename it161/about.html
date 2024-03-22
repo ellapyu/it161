@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <title>Vittoria Andriolo Nutrition</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/nav.css">
+      <link rel="stylesheet" href="css/forms.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="js/main.js"></script>
+      <script src="js/dropdown.js"></script> 
+ </head>
+
+<!--Navigation bar-->
+<header>
+    <a href="home.html">
+        <picture>
+            <source media="(min-width: 501px)" srcset="images/full-logo.svg" class="logo">
+            <img src="images/mobile-logo.svg" alt="Vittoria Andriolo Nutrition Logo" class="logo">
+        </picture>
+  </a>
+
+<h1 style= "position: absolute; right: 500000px" class="page-header">Vittoria Andriolo Nutrition</h1>
+
+<nav class="langSwitch">
+  <!-- <div class="langContainer"> -->
+  <a href="home.html" onclick="changeLanguage('en')">English</a>
+  <a href="home.html" onclick="changeLanguage('es')">Español</a>
+  <!-- </div> -->
+</nav>
+
+  <nav class="topnav" id="myTopnav">
+    <div class="navbar">
+      <a href="about.html">About</a> 
+      <a href="recipes.html">Recipes</a>
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myDropFunction()">Work with Me</button>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="program.html" >My Program</a>
+            <a href="contact.html">Contact</a>
+          </div>
+      </div>
+    </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+  </nav>
+</header>
+<!--end of Navigation bar-->
+
+<body>
+     
+   <main>
+    <div class="wrapper">
+      <h2 class="subheader">Who am I?</h2>
+      
+    <div class="text">
+
+      <picture class="profile2">
+
+        <source media="(min-width: 1200px)" srcset="images/grad-headshot-desktop.jpg">
+        <source media="(min-width: 501px)" srcset="images/grad-headshot-tablet.jpg">
+        <img src="images/grad-headshot-phone.jpg" alt="Vittoria Andriolo Headshot" >
+      </picture>   
+
+    <p>I was born in Venezula, but in 2016, I decided to build a better future for myself and travel to the United States to pursue a higher education where I completed a bachelor’s degree in Dietetics from Eastern Kentucky University. In 2021, I completed my dietetic internship with Aramark at Houston Methodist in May 2021.</p>
+    <p>During my Dietetic Internship I was able to gain experience in many areas of clinical dietetics, perform nutrition focused physicals exams, provide nutrition support, nutrition education, and apply Aramark customer satisfaction policies. While completing my degree, I worked as a Health Promotion Peer Educator which taught me how to counsel peers and professors on forming healthier habits. This job allowed me to improve my communication skills and reassure my passion to educate people about nutrition. I also served as a Dietary Aid in a long-term care facility which gave me insight on different special diets and interprofessional collaboration. I also worked for a student-managed restaurant on campus at EKU where I developed detailed knowledge on food preparation. </p>
+    <p>I am passionate about helping individuals be the best version of themselves by providing education, recipe ideas, and overall nutrition counseling. With my native language being Spanish, I would like to work with Hispanic communities as well.</p>
+    <p>My goals are to continue using social media as a tool to advocate current and accurate nutritional information. I believe I can cater to every individual who comes into a dietitian office as I understand how it feels to be out of your comfort zone and to be challenged. </p>
+    <p>I am proud of my Venezuelan and Italian roots, and am thankful for all the sacrifices my parents and grandparents made for me to be where I am today.</p>
+      <p class="center"><a href="https://foodandnutrition.org/blogs/stone-soup/from-venezuela-to-international-student-to-clinical-dietitian/" class="button" target="_blank">Read more on my experience as an international student.</a></p>
+    
+<!--Footer-->
+<footer>
+  <div class="social-container">
+      <div><a href="https://www.instagram.com/thedietitianyouknow/" target="_blank" class="fa fa-instagram"></a></div>
+      <div><a href="https://www.linkedin.com/in/vittoria-andriolo/" target="_blank" class="fa fa-linkedin"></a></div>
+  </div>
+<p><small>&copy; 2024-<span id="this-year"></span> Vittoria Andriolo, RD ~ Website Created by 
+  Ella Yu, All Rights Reserved ~ 
+  <a id="html-checker" href="#" target="_blank">Check HTML</a> ~ 
+  <a id="css-checker" href="#" target="_blank">Check CSS</a></small>
+</p>
+</footer>
+<script>
+//https://tinyurl.com/dynamic-html-checker
+document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+
+document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);  
+</script>
+<!--end of Footer-->
+    </div>
+  </main>
+ </body>
+</html>

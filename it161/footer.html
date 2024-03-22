@@ -1,0 +1,30 @@
+    <!-- Here is my website footer. -->
+    <!DOCTYPE html>
+    <html lang="en">
+     <head>
+         <title>Vittoria Andriolo Nutrition</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/nav.css">
+      <link rel="stylesheet" href="css/forms.css">
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+     </head>
+     
+    <footer>
+        <div class="social-container">
+            <div><a href="https://www.instagram.com/thedietitianyouknow/" class="fa fa-instagram"></a></div>
+            <div><a href="https://www.linkedin.com/in/vittoria-andriolo/" class="fa fa-linkedin"></a></div>
+        </div>
+    <p><small>&copy; 2024-<span id="this-year"></span> Vittoria Andriolo, RD ~ Website Created by 
+        Ella Yu, All Rights Reserved ~ 
+        <a id="html-checker" href="#" target="_blank">Check HTML</a> ~ 
+        <a id="css-checker" href="#" target="_blank">Check CSS</a></small>
+   </p>
+  </footer>
+  <script>
+    //https://tinyurl.com/dynamic-html-checker
+    document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+      
+    document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);  
+ </script>
